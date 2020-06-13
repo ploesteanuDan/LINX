@@ -1,0 +1,11 @@
+.appContainer {
+  background-color: #202828;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.pagesContainer {
+  height: 100%;
+  width: 100%;
+}

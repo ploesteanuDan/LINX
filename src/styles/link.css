@@ -1,0 +1,11 @@
+.deleteLinkButton {
+  background-image: url("../res/xButton.png");
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  cursor: pointer;
+}

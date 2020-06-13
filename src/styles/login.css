@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Josefin+Sans:wght@500&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.loginContainer {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+}
+
+.LoginBackgroundContainer {
+  background-image: url("../res/bg.png");
+  width: 80%;
+  background-size: cover;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.LoginFieldContainer {
+  width: 20%;
+  min-width: 380px;
+  display: flex;
+  margin-top: 150px;
+  align-items: center;
+  flex-direction: column;
+  color: #fffff0;
+}
+
+.credForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homeText {
+  font-size: 5em;
+  color: #202828;
+  font-weight: 900;
+}
+
+.logo {
+  position: absolute;
+  width: 200px;
+  bottom: 15px;
+  left: 400px;
+}
+
+.credInput {
+  background-color: #2f3838;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.loginButton {
+  border: none;
+  outline: none;
+  background-color: #ef7f73;
+  color: #fffff0;
+  width: 250px;
+  height: 56px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in;
+  font-size: 1em;
+}
+
+.loginButton:hover {
+  background-color: #f39a90;
+  transition: all 0.3s ease-in;
+  font-size: 1.05em;
+}
+
+.credLink:link,
+.credLink:visited {
+  margin-top: 5px;
+  color: #fffff0;
+  text-decoration: none;
+}
+
+.cred {
+  position: relative;
+  width: 250px;
+  height: 35px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.credInput {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 10px;
+  color: #fffff0;
+}
+
+.credLabel {
+  position: absolute;
+  z-index: 100;
+  bottom: -5px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.credContent {
+  position: absolute;
+  bottom: 5px;
+  transition: all 0.3s ease-out;
+}
+
+.credInput:focus + .credLabel .credContent,
+.credInput:valid + .credLabel .credContent {
+  transform: translateY(-150%);
+  font-size: 0.8em;
+  color: #ef7f73;
+}
+
+.loginText {
+  font-weight: normal;
+}

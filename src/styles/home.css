@@ -1,0 +1,40 @@
+.homeContainer {
+  background-color: #181d1d;
+  color: #fffff0;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.signOutButton {
+  position: absolute;
+  z-index: 100;
+  top: 40px;
+  right: 2%;
+  margin-left: 20px;
+  width: 100px;
+  height: 25px;
+  background-color: #ef7f73;
+  border: 0px;
+  outline: 0px;
+  border-radius: 3px;
+  color: ivory;
+}
+
+.whitespace {
+  width: 20%;
+  background-color: #202828;
+  z-index: 5;
+}
+
+.home {
+  width: 80%;
+  padding-left: 10px;
+}
+
+button {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+}

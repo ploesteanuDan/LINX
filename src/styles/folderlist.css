@@ -1,0 +1,14 @@
+.FolderList {
+  list-style: none;
+}
+.newFolderButton {
+  margin-top: 0px;
+  margin-left: 20px;
+  width: 100px;
+  height: 25px;
+  background-color: #b2f9dc;
+  border: 0px;
+  outline: 0px;
+  border-radius: 3px;
+  color: #2f3838;
+}

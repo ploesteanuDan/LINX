@@ -1,0 +1,52 @@
+.folderCardContainer {
+  background-color: ivory;
+  color: #181d1d;
+  font-size: 1.6em;
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  border-radius: 3px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.toggleFolderButton {
+  position: absolute;
+  bottom: -25px;
+  right: -25px;
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  background-image: url("../res/folderToggleButton.png");
+  background-position: center;
+  border: none;
+  outline: none;
+  background-color: rgba(139, 69, 19, 0);
+  cursor: pointer;
+}
+
+.deleteFolderButton {
+  margin-left: 20px;
+  width: 100px;
+  height: 25px;
+  background-color: #ef7f73;
+  border: 0px;
+  outline: 0px;
+  border-radius: 3px;
+  color: ivory;
+}
+
+.addLinkButton {
+  position: absolute;
+  bottom: 40px;
+  width: 100px;
+  height: 25px;
+  background-color: #b2f9dc;
+  border: 0px;
+  outline: 0px;
+  border-radius: 3px;
+  color: #2f3838;
+}
