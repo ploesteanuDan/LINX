@@ -64,7 +64,6 @@ const SignUp = ({ history }) => {
         </form>
       </div>
       <div className="LoginBackgroundContainer">
-        <h1 className="homeText">Organize your e-world.</h1>
         <img className="logo" src={logo} alt="logo"></img>
       </div>
     </div>

@@ -30,7 +30,7 @@ class LinkList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="llContainer">
         {this.state.links &&
           this.state.links.map((links) => (
             <div className="LinkList" key={links.linkName + links.linkURL}>

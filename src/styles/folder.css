@@ -30,7 +30,7 @@
 
 .deleteFolderButton {
   margin-left: 20px;
-  width: 100px;
+  width: 7em;
   height: 25px;
   background-color: #ef7f73;
   border: 0px;
@@ -42,7 +42,7 @@
 .addLinkButton {
   position: absolute;
   bottom: 40px;
-  width: 100px;
+  width: 7em;
   height: 25px;
   background-color: #b2f9dc;
   border: 0px;

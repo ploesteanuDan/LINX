@@ -58,6 +58,7 @@ const Login = ({ history }) => {
             Don't have an account?
           </a>
         </form>
+        <p>Mobile version coming soon.</p>
       </div>
       <div className="LoginBackgroundContainer">
         <img className="logo" src={logo} alt="logo"></img>

@@ -2,9 +2,9 @@
   list-style: none;
 }
 .newFolderButton {
-  margin-top: 0px;
+  margin-top: 10px;
   margin-left: 20px;
-  width: 100px;
+  width: 7em;
   height: 25px;
   background-color: #b2f9dc;
   border: 0px;

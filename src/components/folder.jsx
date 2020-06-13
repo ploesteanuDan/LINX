@@ -31,62 +31,76 @@ class Folder extends Component {
   render() {
     return (
       <div className="folderContainer">
-        <div className="folderCardContainer">
-          {this.props.folderName}
-          <button onClick={this.toggle} className="toggleFolderButton"></button>
-        </div>
         <Spring
-          from={{ opacity: 0, display: "none" }}
+          from={{ marginBottom: "-380px" }}
+          to={{ marginBottom: this.state.toggle ? "0px" : "-380px" }}
+        >
+          {(props) => (
+            <div style={props}>
+              {" "}
+              <div className="folderCardContainer">
+                {this.props.folderName}
+                <button
+                  onClick={this.toggle}
+                  className="toggleFolderButton"
+                ></button>
+              </div>
+            </div>
+          )}
+        </Spring>
+        <Spring
+          from={{ opacity: 0 }}
           to={{
             opacity: this.state.toggle ? 1 : 0,
-            display: this.state.toggle ? "block" : "none",
+
             transform: this.state.toggle
               ? "translatex(0%)"
               : "translatex(-100%)",
           }}
           leave={{
             opacity: 0,
-            display: "none",
+
+            transform: this.state.toggle
+              ? "translatex(-100%)"
+              : "translatex(-0%)",
           }}
         >
           {(props) => (
             <div style={props}>
-              <div className="monkeyBussiness">
-                <div className="linkListContainer">
-                  <LinkList
-                    userId={this.props.userId}
-                    folderName={this.props.folderName}
-                  />
-                  <button className="addLinkButton" onClick={this.toggleAdd}>
-                    Add link
-                  </button>
-                </div>
-                <button
-                  className="deleteFolderButton"
-                  onClick={this.handleDelete}
-                >
-                  Delete folder
+              <div className="linkListContainer">
+                <LinkList
+                  userId={this.props.userId}
+                  folderName={this.props.folderName}
+                />
+                <button className="addLinkButton" onClick={this.toggleAdd}>
+                  Add link
                 </button>
-                <Spring
-                  from={{ opacity: 0, display: "none" }}
-                  to={{
-                    opacity: this.state.toggleAdd ? 1 : 0,
-                    display: this.state.toggleAdd ? "block" : "none",
-                    transform: this.state.toggleAdd
-                      ? "translatey(0%)"
-                      : "translatey(-100%)",
-                  }}
-                >
-                  {(props) => (
-                    <div style={props}>
-                      <CreateLink
-                        userId={this.props.userId}
-                        folderName={this.props.folderName}
-                      />
-                    </div>
-                  )}
-                </Spring>
               </div>
+              <button
+                className="deleteFolderButton"
+                onClick={this.handleDelete}
+              >
+                Delete folder
+              </button>
+              <Spring
+                from={{ opacity: 0, display: "none" }}
+                to={{
+                  opacity: this.state.toggleAdd ? 1 : 0,
+                  display: this.state.toggleAdd ? "block" : "none",
+                  transform: this.state.toggleAdd
+                    ? "translatey(0%)"
+                    : "translatey(-100%)",
+                }}
+              >
+                {(props) => (
+                  <div style={props}>
+                    <CreateLink
+                      userId={this.props.userId}
+                      folderName={this.props.folderName}
+                    />
+                  </div>
+                )}
+              </Spring>
             </div>
           )}
         </Spring>
