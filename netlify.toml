@@ -1,4 +1,4 @@
 [[redirects]]
-  from = "/login"
-  to = "/signup"
+  from = "/*"
+  to = "/*"
   status = 200
